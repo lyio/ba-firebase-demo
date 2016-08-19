@@ -10,7 +10,7 @@ if (environment.production) {
 bootstrap(BaFirebaseDemoAppComponent, [
   FIREBASE_PROVIDERS,
   defaultFirebase({
-    apiKey: "",
+    apiKey: "AIzaSyBmgmyjTfeTHRdXZy-hVS3uQP4Kt5VNJdA",
     authDomain: "https://ba-nosql.firebaseio.com",
     databaseURL: "https://ba-nosql.firebaseio.com",
     storageBucket: "https://ba-nosql.firebaseio.com.appspot.com",
