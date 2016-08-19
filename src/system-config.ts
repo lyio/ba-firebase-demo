@@ -37,6 +37,11 @@ barrels.forEach((barrelName: string) => {
   cliSystemConfigPackages[barrelName] = { main: 'index' };
 });
 
+cliSystemConfigPackages["angularfire2"] = {
+      defaultExtension: 'js',
+      main: 'angularfire2.js'
+    } 
+
 /** Type declaration for ambient System. */
 declare var System: any;
 
@@ -45,7 +50,9 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
+    'firebase': 'vendor/firebase/firebase.js',
+    'angularfire2': 'vendor/angularfire2'
   },
   packages: cliSystemConfigPackages
 });
